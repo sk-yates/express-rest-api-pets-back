@@ -7,7 +7,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 const petRouter = require('./controllers/pets.js');
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "http://127.0.0.1:5173" }));
 
 mongoose.connect(process.env.MONGODB_URI);
 
